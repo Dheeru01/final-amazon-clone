@@ -27,9 +27,6 @@
 .border:hover{
     border:1.5px solid white;
 }
-.nav-address{
-
-}
 .add-first{
     font-size:0.75rem;
     color:#CCCCCC;
@@ -54,6 +51,10 @@
 }
 .nav-search:hover{
     border:2px solid orange;
+}
+.search-select option:hover{
+    color: #febd68;
+    transform: scale(1.08);
 }
 .search-select{
     text-align:center;
@@ -101,8 +102,8 @@
     font-size:0.90rem;
     font-weight:600;
 }
-.panel-all i{
-
+.panel i:hover{
+    transform:scale(1.08);
 }
 .panel-ops p{
     display:inline;
@@ -153,6 +154,13 @@
     background-size:cover;
     margin-top:1rem;
     margin-bottom:1rem;
+    transition : transform 0.3s;
+}
+.box-img:hover{
+    transform:scale(1.08);
+}
+.add-to-cart-btn:hover{
+    transform:scale(1.08);
 }
 .box-content{
     margin-left:1rem;
@@ -165,14 +173,114 @@
 .box a:hover{
     color:orange;
 }
+.sec-2{
+    width:100%;
+    height:315px;
+    padding:20px 0px 15px;
+    display:flex;
+    flex-wrap: wrap;
+    background-color:#f0dff7;
+}
+.sec-2 h3{
+    font-size: 20px;
+    padding-bottom: 3px;
+    margin-top:5px;
+}
+.slide-sec{
+    height: 100%;
+    width:100%;
+    padding:35px;
+    overflow-x: hidden;
+    background-color: white;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: block;
+}
+.product-slide{
+    display: flex;
+    margin-top: 10px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.product-slide::-webkit-scrollbar{
+    background-color: transparent;
+    height:7px; 
+    cursor: pointer;
+}
+.product-slide::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.product-slide li{
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.l-btn, 
+.r-btn{
+    background-color: rgb(255,255,255,1);
+    height:90px;
+    width:50px;
+    text-align: center;
+    cursor:pointer;
+    top:50%;
+    position: absolute; 
+    border:2px solid transparent; 
+}
+.l-btn{
+    border-radius: 0 5px 5px 0;
+    left:10px;
+}
+.r-btn{
+    border-radius: 5px 0 0 5px;
+    right:10px;
+}
+.l-btn:hover{
+    border: 3px solid rgb(2,150,150);
+}
+.r-btn:hover{
+    border: 3px solid rgb(2,150,150);
+}
+.r-btn i, .l-btn i{
+    color: rgb(54,54,54);
+    position:absolute;
+    font-size: 30px;
+    top:35%;
+    left:12%;
+    right:12%;
+}
+.slide-sec h3{
+    font-size: 20px;
+    margin-top:5px;
+    margin-bottom: 0;
+}
+.product-slide.product-slide-1{
+    display: flex;
+    margin-top: 35px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.product-slide li:hover{
+    transform: scale(1.08);
+}
 .panel1{
-    height:50px;
+    height:150px;
     color:#FFFFFF;
     background-color:#232F3E;
     display:flex;
     justify-content:center;
     align-items:center;
     margin-top:2rem;
+}
+.panel1 a{
+    color: #CCCCCC;
+    text-decoration:none;
+}
+.panel1 a:hover{
+    color:orange;
+    transform: scale(1.08);
 }
 .panel2{
     display:flex;
